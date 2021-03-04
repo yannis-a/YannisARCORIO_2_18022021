@@ -1,0 +1,188 @@
+/******************************************************************************
+*                                 RESPONSIVE                                  *
+******************************************************************************/
+@media screen and (max-width: 730px) {
+
+    div.image-article img {
+        width: 100%;
+    }
+
+    section .articles > article {
+        margin: 15px 0 10px 0;
+        width: 100%;
+    }
+
+    aside.aside div.image-article img {
+        width: 215px;
+    }
+
+    section .aside.articles > article {
+        width: 90%;
+    }
+
+
+    div.activities {
+        flex-flow: row wrap;
+        max-height: 100%;
+        align-content: space-between;
+    }
+
+    div.activities .image-article img {
+        width: 100%;
+    }
+
+    div.activities > article:nth-child(3n-2) {
+        height: 175px;
+    }
+}
+
+@media screen and (min-width: 731px) and (max-width: 1020px) {
+
+    div.articles > article {
+        width: 30%;
+    }
+
+    aside.aside > article {
+        height: 175px;
+        display: flex;
+        width: 30%;
+        flex-flow: column nowrap;
+    }
+
+    aside.aside > article > .text-article .rating {
+        position: static;
+        top: 0;
+    }
+
+    aside.aside {
+        flex-flow: row wrap;
+    }
+    .activities > article:nth-child(5n) {
+        height: 380px;
+    }
+}
+
+
+
+/******************************************************************************
+*                                 ARTICLES                                    *
+******************************************************************************/
+
+.articles {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap row;
+}
+
+.articles > article {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 2px solid white;
+    margin: 15px 5px 10px 5px;
+    transition: 0.3s;
+    border-radius: 15px;
+    background-color: white;
+    height: 175px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.articles > article:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.articles article > .text-article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px 5px 0 5px;
+    height: 75px;
+}
+
+.articles article > .image-article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-article img {
+    width: 250px;
+}
+
+.text-article > * {
+    margin: 0
+}
+
+.text-article h3 {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.text-article p {
+    font-size: 0.7em;
+}
+
+/*********************************
+*         CARD POPULARY          *
+*********************************/
+.popular h2::after {
+    content: "\f201";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 90%;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.aside > article {
+    height: 120px;
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap
+}
+
+.aside > article > .text-article {
+    width: 100%;
+}
+
+.aside > article > .text-article .rating {
+    position: relative;
+    top: 38px;
+}
+
+
+
+/*********************************
+*         CARD ACTIVITY          *
+*********************************/
+
+
+.activities {
+    flex-flow: column wrap;
+    align-content: space-between;
+    max-height: 100%;
+}
+
+.activities > article {
+    width: 22%;
+}
+
+.activities > article .text-article {
+    height: auto;
+    padding: 15px 0 10px 10px;
+}
+
+.activities .image-article img {
+    width: auto;
+}
+
+.activities > article:nth-child(3n-2) {
+    height: 380px;
+}

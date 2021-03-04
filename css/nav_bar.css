@@ -1,0 +1,83 @@
+/******************************************************************************
+*                                 RESPONSIVE                                  *
+******************************************************************************/
+@media screen and (max-width: 500px) {
+
+    .menu #register {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        padding-top: 25px;
+    }
+
+    nav.menu {
+        position:static;
+        margin:0;
+    }
+
+    nav.menu ul{
+       padding:0;
+       justify-content:space-between;
+       width:100%;
+    }
+
+    nav.menu ul li {
+        flex : 1;
+        text-align:center;
+        padding-bottom:5px;
+    }
+    nav.menu ul li:hover, nav.menu ul li:focus {
+        border-bottom: #0065FC solid 2px;
+        color: #0065FC;
+    }
+
+    nav.menu ul li a:hover, nav.menu ul li a:focus {
+        border: none;
+        color: none;
+    }
+}
+
+
+/******************************************************************************
+*                                    NAV                                      *
+******************************************************************************/
+.menu {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 5%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 40px 0 0 0;
+}
+
+.menu ul li a {
+    padding: 38px 15px 0px 15px;
+    border-top: white solid 2px;
+    font-size: 1em;
+}
+
+.menu ul li a:hover, .menu ul li a:focus {
+    border-top: #0065FC solid 2px;
+    color: #0065FC;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#register {
+    color: #0065FC;
+    font-weight: bold;
+}
+

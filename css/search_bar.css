@@ -1,0 +1,85 @@
+/******************************************************************************
+*                                 RESPONSIVE                                  *
+******************************************************************************/
+@media screen and (max-width: 500px) {
+
+    header #search-button:after {
+        content: "\f002";
+        font-family: "Font Awesome 5 Free";
+    }
+
+    header #search-button {
+        border-radius: 10px;
+        position: relative;
+        right: 20px;
+        width: auto;
+    }
+
+    header .search input {
+        width: 100%;
+    }
+
+    header .search form {
+        margin-left: 10px;
+    }
+}
+
+/******************************************************************************
+*                              SEARCH BAR                                     *
+******************************************************************************/
+
+.search {
+    margin: 20px 0 20px 0;
+}
+
+.search form {
+    height: 35px;
+    width: 100%;
+    display: flex
+}
+
+#loc-button {
+    border-radius: 10px 0 0 10px;
+    background-color: #DEEBFF;
+    border: none;
+    padding: 5px 11px 5px 11px;
+    outline: none;
+}
+
+#loc-button:hover {
+    background-color: #9EABBF;
+}
+
+#search-button {
+    border-radius: 0 10px 10px 0;
+    background-color: #0065FC;
+    border: none;
+    padding: 5px 11px 5px 11px;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    width: 100px;
+}
+
+#search-button:after {
+    content: 'Rechercher'
+}
+
+#search-button:hover {
+    background-color: #005D97;
+}
+
+.search input {
+    outline: none;
+    border: solid 1px #DEEBFF;
+    width: 200px;
+}
+
+.search input:focus {
+    border: none;
+}
+
+#search-button, #loc-button, .search input {
+    height: inherit;
+    white-space: nowrap;
+}

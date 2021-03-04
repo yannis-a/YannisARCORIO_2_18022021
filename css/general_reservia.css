@@ -1,0 +1,183 @@
+/******************************************************************************
+*                                 RESPONSIVE                                  *
+******************************************************************************/
+@media screen and (max-width: 730px) {
+    body header, body main {
+        margin: 10px 0 0 0;
+    }
+
+    header .front > *, header .info {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    section.accommodation, section.popular, section.activity {
+        flex-basis: 100%;
+    }
+
+    section.accommodation {
+        background-color: white;
+        order: 1;
+    }
+
+    section.activity {
+        height: auto;
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 731px) and (max-width: 1020px) {
+    section.accommodation, section.popular, section.activity {
+        flex-basis: 100%;
+    }
+
+    section.accommodation {
+        background-color: white;
+        order: 1;
+    }
+
+    section.activity {
+        height:700px;
+        order: 2;
+    }
+
+    body header, body main {
+        margin: 10px 1% 0 1%;
+    }
+
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1250px) {
+    section.accommodation {
+        flex-basis: 62%;
+    }
+}
+
+
+/******************************************************************************
+*                                 GENERAL                                     *
+******************************************************************************/
+@font-face {
+    font-family: "Raleway";
+    src: url(./fonts/Raleway/Raleway-VariableFont_wght.ttf)
+}
+
+body, html {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+}
+
+/******************************************************************************
+*                                  HEADER                                     * 
+******************************************************************************/
+header {
+    margin: 40px 5% 0 5%;
+}
+
+/*********************************
+*             INFO               *
+*********************************/
+
+.info {
+    margin: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.info div:nth-child(2) {
+    margin: 0 0 0 5px
+}
+
+.info i {
+    color: #0065FC;
+    border: #DEEBFF solid 1px;
+    border-radius: 50%;
+    padding: 6px;
+    width: 6px;
+    height: 6px;
+    text-align: center;
+    font-size: 0.4em;
+    vertical-align: text-top;
+}
+
+/*********************************
+*              FRONT             *
+*********************************/
+.front h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.front span {
+    font-size: 0.8em;
+}
+
+/******************************************************************************
+*                                  MAIN                                       *
+******************************************************************************/
+
+main {
+    margin: 40px 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main > * {
+    border-radius: 25px;
+    background-color: #F2F2F2;
+    margin-bottom: 2%;
+}
+
+
+main section h2 {
+    margin: 40px 0 0 5%;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.rating {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    color: #0065FC;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/*********************************
+*          ACCOMMODATION         *
+*********************************/
+
+.accommodation {
+    flex-basis: 68%;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #F2F2F2;
+}
+
+.more {
+    justify-self: flex-end;
+    margin: 20px 0 20px 5%;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/*********************************
+*           POPULARY             *
+*********************************/
+
+.popular {
+    flex-basis: 30%;
+}
+
+/*********************************
+*           ACTIVITY             *
+*********************************/
+.activity {
+    background-color: white;
+    height: 500px;
+    flex-basis: 100%;
+}
