@@ -1,7 +1,7 @@
 /******************************************************************************
 *                                 RESPONSIVE                                  *
 ******************************************************************************/
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1020px) {
     header .filters {
         flex-wrap: wrap;
         margin: 0 10px 0 10px;
