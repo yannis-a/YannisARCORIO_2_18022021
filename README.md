@@ -3,6 +3,9 @@
 Projet 2 : OpenCassrooms 
 
 
+Lien du site statique : https://yannis-a.github.io/YannisARCORIO_2_18022021/.
+
+
 Transformez une maquette en site web
 
 Fonctionnalités:
